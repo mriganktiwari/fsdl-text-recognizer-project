@@ -1,35 +1,61 @@
 {
-    "experiment_group": "Sample Experiments",
-    "experiments": [
-        {
-            "dataset": "EmnistDataset",
-            "model": "CharacterModel",
-            "network": "mlp",
-            "network_args": {
-                "num_layers": 2
-            },
-            "train_args": {
-                "batch_size": 256
-            }
-        },
-        {
-            "dataset": "EmnistDataset",
-            "model": "CharacterModel",
-            "network": "mlp",
-            "network_args": {
-                "num_layers": 4
-            },
-            "train_args": {
-                "batch_size": 256
-            }
-        },
-        {
-            "dataset": "EmnistDataset",
-            "model": "CharacterModel",
-            "network": "lenet",
-            "train_args": {
-                "batch_size": 128
-            }
-        }
-    ]
+   "experiment_group": "Sample Experiments",
+   "experiments": [
+           {
+       "dataset": "IamLinesDataset",
+       "model": "LineModelCtc",
+       "network": "line_lstm_ctc",
+       "network_args": {
+           "window_width": 32,
+           "window_stride": 1
+       },
+       "train_args": {
+           "batch_size": 64,
+           "epochs": 5,
+           "username": "mriganktiwari"
+       }
+   },
+       {
+       "dataset": "IamLinesDataset",
+       "model": "LineModelCtc",
+       "network": "line_lstm_ctc",
+       "network_args": {
+           "window_width": 16,
+           "window_stride": 8
+       },
+       "train_args": {
+           "batch_size": 64,
+           "epochs": 5,
+           "username": "mriganktiwari"
+       }
+   },
+       {
+       "dataset": "IamLinesDataset",
+       "model": "LineModelCtc",
+       "network": "line_lstm_ctc",
+       "network_args": {
+           "window_width": 20,
+           "window_stride": 4
+       },
+       "train_args": {
+           "batch_size": 64,
+           "epochs": 5,
+           "username": "mriganktiwari"
+       }
+   },
+       {
+       "dataset": "IamLinesDataset",
+       "model": "LineModelCtc",
+       "network": "line_lstm_ctc",
+       "network_args": {
+           "window_width": 9,
+           "window_stride": 3
+       },
+       "train_args": {
+           "batch_size": 64,
+           "epochs": 5,
+           "username": "mriganktiwari"
+       }
+   }
+   ]
 }
